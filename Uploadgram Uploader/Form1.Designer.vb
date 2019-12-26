@@ -41,6 +41,7 @@ Partial Class MainForm
         '
         Me.TxtBoxPath.Location = New System.Drawing.Point(13, 37)
         Me.TxtBoxPath.Name = "TxtBoxPath"
+        Me.TxtBoxPath.ReadOnly = True
         Me.TxtBoxPath.Size = New System.Drawing.Size(694, 20)
         Me.TxtBoxPath.TabIndex = 0
         '
