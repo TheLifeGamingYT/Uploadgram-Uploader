@@ -23,22 +23,120 @@ Partial Class MainForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.TxtBoxPath = New System.Windows.Forms.TextBox()
+        Me.BtnBrowse = New System.Windows.Forms.Button()
+        Me.BtnUpload = New System.Windows.Forms.Button()
+        Me.LnkLblFileURL = New System.Windows.Forms.LinkLabel()
+        Me.LblUrl = New System.Windows.Forms.Label()
+        Me.LblCredits = New System.Windows.Forms.Label()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'TxtBoxPath
+        '
+        Me.TxtBoxPath.Location = New System.Drawing.Point(13, 37)
+        Me.TxtBoxPath.Name = "TxtBoxPath"
+        Me.TxtBoxPath.Size = New System.Drawing.Size(694, 20)
+        Me.TxtBoxPath.TabIndex = 0
+        '
+        'BtnBrowse
+        '
+        Me.BtnBrowse.Location = New System.Drawing.Point(713, 36)
+        Me.BtnBrowse.Name = "BtnBrowse"
+        Me.BtnBrowse.Size = New System.Drawing.Size(75, 21)
+        Me.BtnBrowse.TabIndex = 1
+        Me.BtnBrowse.Text = "Browse"
+        Me.BtnBrowse.UseVisualStyleBackColor = True
+        '
+        'BtnUpload
+        '
+        Me.BtnUpload.Font = New System.Drawing.Font("Microsoft Sans Serif", 69.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnUpload.Location = New System.Drawing.Point(13, 80)
+        Me.BtnUpload.Name = "BtnUpload"
+        Me.BtnUpload.Size = New System.Drawing.Size(775, 121)
+        Me.BtnUpload.TabIndex = 2
+        Me.BtnUpload.Text = "Upload"
+        Me.BtnUpload.UseVisualStyleBackColor = True
+        '
+        'LnkLblFileURL
+        '
+        Me.LnkLblFileURL.AutoSize = True
+        Me.LnkLblFileURL.Location = New System.Drawing.Point(82, 246)
+        Me.LnkLblFileURL.Name = "LnkLblFileURL"
+        Me.LnkLblFileURL.Size = New System.Drawing.Size(59, 13)
+        Me.LnkLblFileURL.TabIndex = 3
+        Me.LnkLblFileURL.TabStop = True
+        Me.LnkLblFileURL.Text = "LinkLabel1"
+        '
+        'LblUrl
+        '
+        Me.LblUrl.AutoSize = True
+        Me.LblUrl.Location = New System.Drawing.Point(12, 246)
+        Me.LblUrl.Name = "LblUrl"
+        Me.LblUrl.Size = New System.Drawing.Size(73, 13)
+        Me.LblUrl.TabIndex = 4
+        Me.LblUrl.Text = "Your file URL:"
+        '
+        'LblCredits
+        '
+        Me.LblCredits.AutoSize = True
+        Me.LblCredits.Location = New System.Drawing.Point(507, 246)
+        Me.LblCredits.Name = "LblCredits"
+        Me.LblCredits.Size = New System.Drawing.Size(281, 13)
+        Me.LblCredits.TabIndex = 5
+        Me.LblCredits.Text = "Uploadgram by ShiSHcat - Uploader by TheLifeGamingYT"
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(15, 218)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(223, 17)
+        Me.CheckBox1.TabIndex = 6
+        Me.CheckBox1.Text = "Directly open file if the upload is succesful"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(10, 13)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(97, 13)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Your file local path:"
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 278)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.LblCredits)
+        Me.Controls.Add(Me.LblUrl)
+        Me.Controls.Add(Me.LnkLblFileURL)
+        Me.Controls.Add(Me.BtnUpload)
+        Me.Controls.Add(Me.BtnBrowse)
+        Me.Controls.Add(Me.TxtBoxPath)
         Me.Name = "MainForm"
         Me.Text = "Uploadgram Uploader"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents TxtBoxPath As TextBox
+    Friend WithEvents BtnBrowse As Button
+    Friend WithEvents BtnUpload As Button
+    Friend WithEvents LnkLblFileURL As LinkLabel
+    Friend WithEvents LblUrl As Label
+    Friend WithEvents LblCredits As Label
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Label1 As Label
 End Class
