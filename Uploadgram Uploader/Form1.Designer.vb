@@ -29,13 +29,9 @@ Partial Class MainForm
         Me.LnkLblFileURL = New System.Windows.Forms.LinkLabel()
         Me.LblUrl = New System.Windows.Forms.Label()
         Me.LblCredits = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.ChkBxDirect = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'TxtBoxPath
         '
@@ -69,10 +65,8 @@ Partial Class MainForm
         Me.LnkLblFileURL.AutoSize = True
         Me.LnkLblFileURL.Location = New System.Drawing.Point(82, 246)
         Me.LnkLblFileURL.Name = "LnkLblFileURL"
-        Me.LnkLblFileURL.Size = New System.Drawing.Size(59, 13)
+        Me.LnkLblFileURL.Size = New System.Drawing.Size(0, 13)
         Me.LnkLblFileURL.TabIndex = 3
-        Me.LnkLblFileURL.TabStop = True
-        Me.LnkLblFileURL.Text = "LinkLabel1"
         '
         'LblUrl
         '
@@ -92,15 +86,15 @@ Partial Class MainForm
         Me.LblCredits.TabIndex = 5
         Me.LblCredits.Text = "Uploadgram by ShiSHcat - Uploader by TheLifeGamingYT"
         '
-        'CheckBox1
+        'ChkBxDirect
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(15, 218)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(223, 17)
-        Me.CheckBox1.TabIndex = 6
-        Me.CheckBox1.Text = "Directly open file if the upload is succesful"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.ChkBxDirect.AutoSize = True
+        Me.ChkBxDirect.Location = New System.Drawing.Point(15, 218)
+        Me.ChkBxDirect.Name = "ChkBxDirect"
+        Me.ChkBxDirect.Size = New System.Drawing.Size(223, 17)
+        Me.ChkBxDirect.TabIndex = 6
+        Me.ChkBxDirect.Text = "Directly open file if the upload is succesful"
+        Me.ChkBxDirect.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -117,7 +111,7 @@ Partial Class MainForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 278)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.ChkBxDirect)
         Me.Controls.Add(Me.LblCredits)
         Me.Controls.Add(Me.LblUrl)
         Me.Controls.Add(Me.LnkLblFileURL)
@@ -138,6 +132,6 @@ Partial Class MainForm
     Friend WithEvents LnkLblFileURL As LinkLabel
     Friend WithEvents LblUrl As Label
     Friend WithEvents LblCredits As Label
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents ChkBxDirect As CheckBox
     Friend WithEvents Label1 As Label
 End Class
